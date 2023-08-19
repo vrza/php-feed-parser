@@ -1,0 +1,7 @@
+= Feed parser library for PHP
+
+Supported formats:
+
+* RSS 2.0
+* Atom
+* JSON feed
