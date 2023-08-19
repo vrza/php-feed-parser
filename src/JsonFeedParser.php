@@ -23,7 +23,6 @@ class JsonFeedParser implements Parser
 
     private function convert()
     {
-//        var_dump($this->rawJsonParse);
         foreach ($this->rawJsonParse['items'] as $rawItem) {
             $item = [
                 'title' => $rawItem['title'],
