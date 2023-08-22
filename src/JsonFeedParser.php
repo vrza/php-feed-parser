@@ -27,7 +27,8 @@ class JsonFeedParser implements Parser
             $item = [
                 'title' => $rawItem['title'],
                 'link' => $rawItem['url'],
-                'message' => $rawItem['summary'], // or content_html
+                'message' => $rawItem['content_html'], // or summary
+                'image' => $rawItem['image'],
                 'published' => $rawItem['date_published'],
                 'datetime' => new DateTime($rawItem['date_published'])
             ];
